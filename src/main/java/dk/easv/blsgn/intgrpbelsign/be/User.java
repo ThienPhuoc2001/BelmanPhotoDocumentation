@@ -21,10 +21,11 @@ public class User {
         this.email = email;
         this.phone_number = phone_number;
     }
-
     public User() {
-
+//        defining multiple constructors within a class with different parameter
+//        lists for creating different objects with various initializations
     }
+
 
 
     public int getRole_id() {

@@ -183,6 +183,7 @@ public class AddEditUser {
         user.setPhone_number(phoneField.getText());
         user.setRole_id(roleComboBox.getValue().getRole_id());
         return user;
+
     }
 
     private void showErrorDialog(String title, String message) {

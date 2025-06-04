@@ -12,10 +12,6 @@ import java.util.function.Predicate;
 public abstract class BaseOrderController {
 
     protected List<Order> allOrders; // Shared orders list accessible by subclasses
-
-    /**
-     * Sets up order list and interaction logic
-     */
     protected void initializeOrderList(
             TextField searchField,
             ListView<String> listView,
@@ -24,7 +20,8 @@ public abstract class BaseOrderController {
             Predicate<Order> highlightCondition,
             Function<String, List<Order>> filterFunction,
             Consumer<List<Order>> onOrderSelected
-    ) {
+    )
+    {
 
         this.allOrders = orderModel.getAllOrders();
 
